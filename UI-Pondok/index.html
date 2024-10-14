@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsif dengan Dropdown</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<nav class="bg-white shadow">
+    <div class="container mx-auto flex justify-between items-center p-4">
+        <div class="flex items-center">
+            <img src="logo-j.png" alt="Logo" class="h-8 mr-2 ">
+            <span class="font-bold text-xl"></span>
+        </div>
+        <div class="hidden md:flex items-center space-x-4">
+            <a href="#" class="text-gray-600 hover:text-blue-500"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="text-gray-600 hover:text-blue-500"><i class="fas fa-stream"></i> Alur</a>
+            <a href="#" class="text-gray-600 hover:text-blue-500"><i class="fas fa-info-circle"></i> Info</a>
+            <a href="#" class="text-gray-600 hover:text-blue-500"><i class="fas fa-images"></i> Gallery</a>
+            <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">Daftar Daya</button>
+        </div>
+        <button id="menu-button" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobile-menu" class="md:hidden hidden">
+        <div class="flex flex-col">
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200"><i class="fas fa-stream"></i> Alur</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200"><i class="fas fa-info-circle"></i> Info</a>
+            <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-200"><i class="fas fa-images"></i> Gallery</a>
+            <button class="block w-full bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600">Daftar Daya</button>
+        </div>
+    </div>
+</nav>
+
+<section class="h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/random/1920x1080');">
+    <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+        <h1 class="text-white text-4xl font-bold">Selamat Datang di Website Kami</h1>
+    </div>
+</section>
+
+<script>
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>

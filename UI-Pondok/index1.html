@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Santri Baru</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .navbar-custom {
+            background-color: rgba(248, 249, 250, 0.9);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .navbar-custom .navbar-nav .nav-link {
+            color: #343a40;
+            font-weight: bold;
+        }
+        .navbar-custom .navbar-nav .nav-link:hover {
+            color: #007bff;
+        }
+        .navbar-brand img {
+            height: 40px;
+        }
+        .btn-daftar {
+            font-weight: bold;
+        }
+        .section-header {
+            padding: 60px 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        .section-header h1 {
+            font-weight: bold;
+            color: #ffcc00; /* Warna teks judul */
+        }
+        .section-header p {
+            font-size: 1.2rem;
+            color: #ffffff; /* Warna teks deskripsi */
+        }
+        .btn-download {
+            margin: 10px;
+            width: 200px;
+            background-color: #007bff; /* Warna latar tombol */
+            color: #ffffff; /* Warna teks tombol */
+        }
+        .btn-download:hover {
+            background-color: #0056b3; /* Warna latar saat hover */
+        }
+        .navbar-toggler {
+            border: none;
+        }
+        .navbar-toggler .fas {
+            font-size: 1.5rem;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop class="video-background">
+    <source src="path-to-your-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+    <a class="navbar-brand" href="#">
+        <img src="logo-j.png" alt="Logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Alur</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kegiatan</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary btn-daftar" href="#">Daftar</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<section class="section-header">
+    <div class="container">
+        <h1>PENDAFTARAN SANTRI BARU</h1>
+        <p>PP Cemerlang Annajach Bahrul Ulum Tambakberas Jombang</p>
+        <p>Tahun Ajaran 2025/2026</p>
+        <a href="#" class="btn btn-download">Download Brosur</a>
+        <a href="#" class="btn btn-download">Download Pembayaran</a>
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
